@@ -1,0 +1,329 @@
+/*** For Nav Menu Fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,600&display=swap');
+/*font-family: 'Saira', sans-serif;*/
+
+/*** For paragraph ***/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+ margin:0;
+ padding: 0; 
+ box-sizing: border-box;
+ background-color: #EEE2DC;
+}
+
+/*** Styling Hamburger Menu **/
+
+.hamburger{
+  position: fixed;
+  top:40px;
+  right:40px;
+  width: 70px;
+  height: 70px;
+  background: #EDC7B7 url(menu.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index:1000;
+}
+
+.hamburger.active{
+  background: #EDC7B7 url(close.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*** Styling Banner ***/
+
+section{
+  padding: 100px;
+  min-height: 100vh;
+  background-color: #EEE2DC;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+}
+
+.banner.imgSiderbar{
+  position: absolute;
+  top:0;
+  left:0;
+  width:300px;
+  height: 100%;
+}
+
+.banner .imgSidebar img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .contentBx ,.sidebar{
+position: absolute;
+top: 0;
+right:0;
+width: calc(100% - 450px);
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px;
+font-family:  'Dancing Script', cursive;
+font-size: 10px;
+}
+
+.logoText{
+  position: absolute;
+  top:20px;
+  left:100px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #AC3B61;
+  opacity: 0.7;
+  color:#EEE2DC;
+  padding:0.5rem;
+  border-radius: 30px;
+  
+}
+
+.banner .contentBx h4{
+  font-size: 2rem;
+  color:#123C69;
+  font-weight: 400;
+}
+
+.banner .contentBx h4 span{
+
+  color: #AC3B61;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner .contentBx h2{
+  font-size: 2.5rem;
+  color:#AC3B61;
+  line-height: 1em;
+
+}
+
+p{
+  font-size: 2rem;
+  margin:20px 0;
+  font-weight: 300;
+}
+
+.btn{
+  background:#EDC7B7;
+  color: #123C69;
+  font-size: 1.5rem;
+  padding:10px 30px;
+  display: inline-block;
+  text-decoration:none;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: #BAB2B5;
+}
+
+/*** Side Bar Design ***/
+
+.sidebar{
+  
+  position: fixed;
+  background: black;
+  display:flex;
+  justify-content: center;
+  transition:0.5s;
+  padding: 40px;
+  z-index: 100;
+  right:-100% ;
+}
+
+ .sidebar .menu{
+  background-color: black;
+} 
+.sidebar.active{
+
+  right:0;
+}
+
+.sidebar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar ul li{
+  list-style: none;
+  background-color: black;
+  
+
+}
+
+.sidebar ul li a{
+  background: none;
+  color: #713d23;
+  font-size: 3rem;
+  margin: 15px 0;
+  font-weight: 500;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  text-decoration:none;
+  line-height:4rem;
+}
+
+.sidebar ul li a:hover{
+  color: #dc7a4a;
+}
+
+/*** SVG design ***/
+.svg{
+  position: absolute;
+  bottom:20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.svg li{
+  margin-right: 30px;
+  list-style: none;
+  text-align: center;
+  
+}
+
+.svg li i{
+  text-align: center;
+  font-size: 50px;
+  color: #AC3B61;
+  transform: scale(1);
+  opacity: 0.7;
+}
+
+.svg li i:hover{
+  transform : scale(1.5);
+
+}
+
+/*** Styling About Me Page ***/
+.about{
+  background: #EEE2DC;
+  background-size: cover;
+  font-family:  'Dancing Script', cursive;
+  /* text-align: center;
+  display: flex;
+  justify-content: center; */
+}
+.title{
+  width:100%;
+  
+}
+
+ h2{
+  text-align: center;
+  position: relative;
+  color:#AC3B61;
+  font-size: 4.5rem;
+  font-family:  'Dancing Script', cursive;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+p{
+  text-align: center;
+  /*width:25ch;*/
+  display:inline-block;
+  color: #123C69;
+  display: flex;
+  justify-content: center;
+  
+}
+
+h3{
+  text-align: center;
+  color:#AC3B61;
+  font-size:4rem;
+}
+
+.list-1{
+  text-align: center;
+  color:#123C69;
+  font-size:2.75rem;
+  list-style: none;
+  line-height: 70px;
+  opacity:0.7;
+}
+
+li{
+  text-align: center;
+  color:#123C69;
+  font-size:1.5rem;
+  list-style: none;
+  
+}
+
+.about .content{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about .content .textBx{
+  min-width: 49%;
+  width: 49%;
+}
+
+/*** Work Design and styling goes here ***/
+.work .content *{
+
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work .content .workBx {
+  
+  margin:10px;
+  transition: 0.5s;
+  text-align: center;
+
+}
+
+h3{
+
+  font-family:'Dancing Script', cursive;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+p{
+  font-family:  'Dancing Script', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  /*width:25ch;*/
+  display:inline-block;
+  color: #123C69;
+  display: flex;
+  justify-content: center;
+}
+
+ .imgBx-2 img{
+  width: 225px;
+  height: 225px;
+  border-radius: 20%;
+ }
+  
