@@ -287,7 +287,7 @@ li{
 }
 
 /*** Work Design and styling goes here ***/
-.work .content *{
+.work {
 
   display: flex; 
   flex-direction: row;
@@ -319,11 +319,25 @@ p{
   color: #123C69;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
- .imgBx-2 img{
-  width: 225px;
-  height: 225px;
-  border-radius: 20%;
- }
+ .slider{
+   border:none;background-color:transparent;
+   align-items:center;
+  }
+  
+  .slider .caption {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color:blue; 
+  }
+  
+ .img-slide{
+    height:500px;
+    width:500px;
+    object-fit: cover;
+    border-radius:20%;
+    border:solid  #AC3B61 0.5rem;
+  }
   
