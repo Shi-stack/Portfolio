@@ -12,12 +12,12 @@ function hamburgerMenu(){
 var i = 0; 
 var image = new Array();   
 // LIST OF IMAGES 
-image[0] = "/images/img-1.jpeg"; 
-image[1] = "/images/img-2.jpeg"; 
-image[2] = "/images/img-3.jpeg"; 
-image[3] = "/images/img-4.jpeg"; 
-image[4] = "/images/img-5.jpeg"; 
-image[5] = "/images/img-6.jpeg";   
+image[0] = "images/img-1.jpeg"; 
+image[1] = "images/img-2.jpeg"; 
+image[2] = "images/img-3.jpeg"; 
+image[3] = "images/img-4.jpeg"; 
+image[4] = "images/img-5.jpeg"; 
+image[5] = "images/img-6.jpeg";   
 
 var k = image.length-1;    
 
